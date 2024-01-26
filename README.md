@@ -1,5 +1,10 @@
 # eth-tracker-db
 
+![eth-tracker-db-example](./src/eth-tracker-db-example.png)
+*Example (left: Neo4j, Right: Gephi visualization)*
+***
+
+
 Overview
 ```
 ├── LICENSE
