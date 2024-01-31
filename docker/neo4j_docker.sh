@@ -12,7 +12,7 @@ PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 docker run \
 --name $INSTANCE_NAME \
 -p7474:7474 -p7687:7687 \
--u 1000:1000 \
+--user=$(id -u):$(id -g) \
 --env NEO4J_dbms_connector_https_advertised__address="localhost:7473" \
 --env NEO4J_dbms_connector_http_advertised__address="localhost:7474" \
 --env NEO4J_dbms_connector_bolt_advertised__address="localhost:7687" \
