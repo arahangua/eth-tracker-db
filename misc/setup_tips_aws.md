@@ -48,3 +48,21 @@ newgrp docker
 sudo chown -R $USER:$GROUP <mount folder>
 chmod -R 755 <mount folder>
 ```
+
+
+5. for setting up jupyter in remote vscode session
+
+```
+# installing gcc
+# sudo yum groupinstall "Development Tools" 
+sudo yum install gcc python3-devel
+
+# symbolic link for python
+sudo ln -s /usr/bin/python3 /usr/bin/python
+
+# get pip 
+curl -O https://bootstrap.pypa.io/get-pip.py
+python get-pip.py --user
+
+
+```
