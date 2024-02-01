@@ -9,7 +9,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 
 
-docker run \
+docker run -d \
 --name $INSTANCE_NAME \
 -p7474:7474 -p7687:7687 \
 --user=$(id -u):$(id -g) \
