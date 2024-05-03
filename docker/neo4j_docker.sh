@@ -25,4 +25,4 @@ docker run -d \
 -e NEO4J_apoc_import_file_use__neo4j__config=true \
 -e NEO4J_PLUGINS=\[\"apoc\"\] \
 -e NEO4J_dbms_memory_transaction_total_max=0 \
-neo4j:latest
+graphstack/dozerdb:5.18.1
